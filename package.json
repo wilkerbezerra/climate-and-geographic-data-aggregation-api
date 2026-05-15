@@ -1,30 +1,18 @@
 {
   "name": "climate-and-geographic-data-aggregation-api",
   "version": "1.0.0",
-  "description": "API de Agregação de Dados Climáticos e Geográficos",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "tests"
-  },
+  "description": "API de agregação de dados climáticos e geográficos",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wilkerbezerra/climate-and-geographic-data-aggregation-api.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/wilkerbezerra/climate-and-geographic-data-aggregation-api/issues"
-  },
-  "homepage": "https://github.com/wilkerbezerra/climate-and-geographic-data-aggregation-api#readme",
   "dependencies": {
-    "axios": "^1.16.0",
-    "cors": "^2.8.6",
-    "express": "^5.2.1"
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
